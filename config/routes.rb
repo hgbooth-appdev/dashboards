@@ -4,5 +4,12 @@ Rails.application.routes.draw do
 
   get("/", {:controller => "application", :action => "home"})
   get("/forex", {:controller => "application", :action => "forex"})
+  get("/forex/:one", {:controller => "application", :action => "forexOne"})
+  get("/forex/:one/:two", {:controller => "application", :action => "forexTwo"})
+
+
+  
   get("/covid", {:controller => "application", :action => "covid"})
+
+
 end

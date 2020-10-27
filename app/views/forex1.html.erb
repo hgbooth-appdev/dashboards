@@ -1,11 +1,11 @@
-<h1>Currency pairs</h1>
+<h1>Convert <%= @cur %></h1>
 
-<p>Go <a href = "/">back</a></p>
+<p>Go <a href = "/forex">back</a></p>
 
 <ul>
 <% @res.each do |s| %>
 
-<li><%= "Convert 1 " + s + " to..." %></li>
+<li><a href="/forex/<%= @cur +"/"+ s %>"><%= "Convert 1 " + s + " to..." %></a></li>
 
 <% end %>
 
