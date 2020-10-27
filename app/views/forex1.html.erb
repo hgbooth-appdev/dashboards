@@ -5,7 +5,7 @@
 <ul>
 <% @res.each do |s| %>
 
-<li><a href="/forex/<%= @cur +"/"+ s %>"><%= "Convert 1 " + s + " to..." %></a></li>
+<li><a href="/forex/<%= @cur +"/"+ s %>"><%= "Convert 1 " + @cur + " to " + s +"..." %></a></li>
 
 <% end %>
 
